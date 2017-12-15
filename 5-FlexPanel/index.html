@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- index for JS30 Day 5 Flex Panel Gallery -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="style.css">
+	
+	<title>5 | Flex Panel Gallery</title>
+</head>
+<body>
+	<div class="panels">
+		<div class="panel panel1">
+			<p>hey</p>
+			<p>lets</p>
+			<p>dance</p>
+		</div>
+		
+		<div class="panel panel2">
+			<p>give</p>
+			<p>take</p>
+			<p>receive</p>
+		</div>
+		
+		<div class="panel panel3">
+			<p>experience</p>
+			<p>it</p>
+			<p>today</p>
+		</div>
+		
+		<div class="panel panel4">
+			<p>give</p>
+			<p>all</p>
+			<p>you can</p>
+		</div>
+		
+		<div class="panel panel5">
+			<p>life</p>
+			<p>in</p>
+			<p>motion</p>
+		</div>
+	</div>
+	
+	<script>
+		const panels = document.querySelectorAll('.panel');
+		
+		function toggleOpen() {
+			this.classList.toggle('open');
+		}
+		
+		function toggleActive(e) {
+			if(e.propertyName.includes('flex')) {
+				this.classList.toggle('open-active');
+			}
+		}
+		
+		panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+		panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+	</script>
+</body>
+</html>
