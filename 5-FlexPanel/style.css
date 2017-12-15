@@ -78,7 +78,7 @@ a {
 	align-items: center;
 	transition: 
 		font-size 0.7s,
-		flex 0.7s,
+		flex 0.5s,
 		background 0.2s;
 	background-size: cover;
 	background-position: center;
@@ -96,7 +96,7 @@ a {
 
 .panel > * {
 	width: 100%;
-	transition: transform 0.4s;
+	transition: transform 0.3s;
 	flex: 1 0 auto;
 	display: flex;
 	justify-content: center;
@@ -111,15 +111,14 @@ a {
 .panel p {
 	text-transform: uppercase;
 	font-family: 'Amatic SC', cursive;
-	font-size: 24px;
+	font-size: 32px;
 	text-shadow:0 0 4px rgba(0, 0, 0, 0.8);
 }
 
 .panel p:nth-child(2) {
-	font-size: 48px;
+	font-size: 72px;
 }
 
 .panel.open {
 	flex: 5;
-	font-size: 40px;
 }
